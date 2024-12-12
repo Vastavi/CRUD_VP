@@ -12,9 +12,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use("/api/products", productRoute)
 
 
-
 app.get('/', (req, res) => {
     res.send('Hello from Node API Server updated')
+     
 });
 
 
@@ -23,6 +23,7 @@ mongoose.connect("mongodb+srv://NODEDB:Abcd!123@backenddb.rehrv.mongodb.net/Node
         console.log("Connected to database!");
         app.listen(3000, () => {
             console.log("Server is running on port 3000")
+           
         });
     })
     .catch(() => {

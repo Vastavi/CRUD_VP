@@ -23,6 +23,12 @@ const ProductSchema = mongoose.Schema
             default: 0
         },
 
+    //    category:
+    //    {
+    //     type: String,
+    //     required: [true, "Add a description"],
+    //    },
+
         image:
         {
             type: String,
